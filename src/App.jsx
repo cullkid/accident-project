@@ -164,8 +164,8 @@ function App() {
           better-informed decisions about mobility and risk management.{" "}
         </div>
         <div className="font-bold underline mr-2 text-blue-600">
-          Storytelling Insight: Understanding the Patterns Behind Vehicle Crash
-          Incidents
+          Storytelling Insight: Understanding the Patterns Behind Plane and
+          Vehicle Crash Incidents
         </div>
         <div>
           The goal of this project is to provide actionable insights aimed at
