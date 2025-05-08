@@ -11,6 +11,9 @@ import Badroad from "./img/badroad.png";
 import Dymention from "./img/dymention.png";
 import Monthtrend from "./img/monthtrend.png";
 import Distance from "./img/distance.png";
+import Compare from "./img/compare.png";
+import Dashboard from "./img/dashboard.png";
+import Dashboard2 from "./img/dashboard2.png";
 
 function App() {
   return (
@@ -36,8 +39,8 @@ function App() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center">
-          <span className="font-bold">Duration</span>
-          <span>One Week</span>
+          <span className="font-bold">Status</span>
+          <span>Not completed</span>
         </div>
       </div>
 
@@ -180,8 +183,8 @@ function App() {
         <hr className="mt-[25px]" />
 
         <div>
-          <div className="font-bold underline mr-2 text-blue-600 mt-[25px]">
-            Vehicle Accidents
+          <div className="font-bold text-3xl underline mr-2 text-blue-600 mt-[25px] flex items-center justify-center">
+            Vehicle Accidents Analysis
           </div>
           <div>
             After collecting the vehicle accident data, a complete data pipeline
@@ -359,6 +362,140 @@ function App() {
               found guilty on this act after training.
             </div>
           </div>
+          <div className="mt-[30px]">
+            <ul className="list-disc pl-10 mt-[5px]">
+              <li>
+                <span className="font-bold underline mr-2 text-blue-600">
+                  Data Quality & Reporting Gaps
+                </span>
+                From the summary card, there's a mismatch between local and
+                state-level case reporting (111,124 vs. 111,110), indicating
+                data inconsistencies or underreporting at the local level.
+              </li>
+            </ul>
+            <div className="my-[15px]">
+              <img src={Compare} alt="" className="rounded-2xl" />
+            </div>
+            <div>
+              <span className="font-bold text-blue-600">
+                📌 Recommendation:{" "}
+              </span>
+              Standardize crash reporting mechanisms between local and state
+              agencies. Provide training on accurate data entry and enforce
+              reporting accountability.
+            </div>
+          </div>
+        </div>
+
+        <hr className="mt-[25px]" />
+
+        <div>
+          <div className="font-bold mr-2 text-blue-600 mt-[25px]">
+            🚨Expanded Insight: The Role of Alcohol and Substance Abuse in Crash
+            Incidents
+          </div>
+          <div className="w-[950px] rounded-2xl flex items-center justify-center mx-auto py-[25px]">
+            <a href="https://public.tableau.com/app/profile/anthony.eze4518/viz/CARCRASHPROJCTKPIsDASHBAORD/Dashboard2">
+              <img src={Dashboard} alt="" className="rounded-2xl" />
+            </a>
+            <a href="https://public.tableau.com/app/profile/anthony.eze4518/viz/CARCRASHPROJCTKPIsDASHBAORD/Dashboard2">
+              <img src={Dashboard2} alt="" className="rounded-2xl" />
+            </a>
+          </div>
+          <div>
+            From the "Alcohol and Substance Abuse" chart (visible in one of the
+            dashboard image above), we observe a troubling pattern:
+          </div>
+          <ul className="list-disc pl-10 mt-[5px]">
+            <li>
+              A significant number of crash reports are linked to drivers under
+              the influence.
+            </li>
+            <li>
+              ‘Alcohol Involved’ and ‘Drugs Involved’ cases combined account for
+              a high portion of the incidents.
+            </li>
+            <li>
+              This highlights the critical role of impaired driving in the
+              accident history.
+            </li>
+          </ul>
+          <div className="mt-[25px]">
+            <span className="font-bold mr-2 text-blue-600">
+              📊 Key Insight:
+            </span>
+            Even though impaired driving is universally recognized as dangerous,
+            the data confirms it's still a persistent, measurable contributor to
+            crash frequency in Montgomery County. The data shows this isn't a
+            marginal issue—it's a core driver of risk.
+          </div>
+          <div className="mt-[25px] ">
+            <div className="font-bold mr-2 text-blue-600">
+              ✅ Managerial Recommendations:
+            </div>
+            <ul className="list-disc pl-10 mt-[5px]">
+              <li>
+                Implement DUI Checkpoints Strategically Use the high-crash
+                months and peak night hours (from previous visuals) to time DUI
+                enforcement checkpoints more effectively.
+              </li>
+              <li>
+                Behavioral Intervention Campaigns Partner with public health
+                agencies to run awareness and rehabilitation programs,
+                especially targeting repeat offenders and high-risk zones (like
+                night-time hot spots).
+              </li>
+              <li>
+                Install Substance Detection Tech (Where Legal) Evaluate pilot
+                programs using roadside detection systems (e.g., camera-AI for
+                drowsiness, breath-based alcohol detection in ignition systems).
+              </li>
+              <li>
+                Data-Driven Education Programs Utilize insights to educate local
+                schools, colleges, and workplaces about the real-world risks and
+                trends found in their own community crash data.
+              </li>
+              <li>
+                Public Dashboard or Heatmap Publish anonymized, aggregated crash
+                data (especially involving substances) to raise public awareness
+                and encourage safer behavior.
+              </li>
+            </ul>
+          </div>
+          <div className="mt-[25px] ">
+            <span className="font-bold mr-2 text-blue-600">
+              🎯Summary for Management
+            </span>
+            Combining this alcohol/substance abuse insight with other factors
+            (weather, time, lane, and distance), it’s evident that driver
+            behavior under impairment is a major crash factor—especially at
+            night and during certain months. Tackling impaired driving should be
+            a priority intervention area in your vehicle crash reduction
+            strategy.
+          </div>
+          <div>
+            These insights provide a multi-angle view of factors driving vehicle
+            accidents. A data-backed strategy that addresses driver behavior,
+            road infrastructure, law enforcement, and data reporting will be
+            essential in reducing accident rates. Empowering departments with
+            this intelligence can significantly enhance public safety, resource
+            allocation, and policy effectiveness.
+          </div>
+          <div className="underline">
+            Though many crashes occur at night, under clear skies, when
+            visibility is high — yet impairment due to alcohol or drugs is
+            likely driving the majority of these accidents. This insight
+            challenges the assumption that bad weather is the primary risk
+            factor
+          </div>
+        </div>
+
+        <hr className="mt-[25px]" />
+        <div>
+          <div className="font-bold text-3xl underline mr-2 text-blue-600 mt-[25px] flex items-center justify-center">
+            Plane Crash Analysis
+          </div>
+          <p className="">Loading ...</p>
         </div>
 
         <hr className="mt-[25px]" />
